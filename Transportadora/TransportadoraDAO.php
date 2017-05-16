@@ -1,5 +1,6 @@
 <?php
 include "mysqlconnector.php";
+ 
 
 class TransportadoraDAO{
 $id = $_POST["id"];
