@@ -1,0 +1,14 @@
+{
+    "name": "vendor/logi-med",
+    "description": "Description of project Logi_Med.",
+    "authors": [
+        {
+            "name": "main",
+            "email": "1@1.com"
+        }
+    ],
+    "require": {
+        "codeception/codeception": "2.2.11",
+        "fzaninotto/faker": "v1.6.0"
+    }
+}
