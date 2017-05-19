@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Sistema LogiMed<</title>
+        <title>Sistema LogiMed</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +10,8 @@
     </head>
     <body>
         <?php include 'header.php';?>
-        <h4>Bem Vindo</h4>
+        <center><h4>Bem Vindo</h4></center>
+        <center><h4>Selecione o que deseja no menu acima</h4></center>
 
         <?php
         ?>
