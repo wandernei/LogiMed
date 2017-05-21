@@ -53,7 +53,7 @@
                         <th>Avaliacao</th>
                         <th>Zona de Atendimento</th>
                         <th>Ativo?</th>
-                        <th>Operacoes</th>
+                        <!--<th>Operacoes</th>-->
                     </tr>
                 </thead>
                 <tbody>
