@@ -3,6 +3,7 @@ $servername = "localhost";
 $username = "username";
 $password = "password";
 $dbname = "myDBPDO";
+include mysqlconnector.php;
 
 try {
     //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
