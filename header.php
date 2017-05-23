@@ -1,5 +1,5 @@
         <div style="text-align: left;">
-            <img src="Resorces/Logo.jpg" alt="Logo" style="width:10%;height:10%;">
+            <img src=Resorces/Logo.jpg alt=Logo style=width:10%;height:10%;>
             
         </div>
         <div class=bs-example data-example-id=default-navbar>

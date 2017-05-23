@@ -9,10 +9,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <?php include 'header.php';?>
-        <h4>Bem Vindo</h4>
+        <?php include 'header.php'; ?>
 
-        <?php
-        ?>
+        
+        
+        
+        
+        
+        
+        
+
+
+        <?php include 'footer.php'; ?>
     </body>
 </html>
