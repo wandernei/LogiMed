@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <title>Transportadoras</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--BOOTSTRAP -->
-        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 	   	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	   	
         <!--DATATABLE -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
 
@@ -34,10 +35,10 @@
 
                 <div class="form-inline" style="text-align:right;">
                     <div class="form-group" style="width:100%;">
-						<a class="col-sm-1" href="" style="font-size:2px;">Transportadoras</a>
+						<a class="col-sm-1" href="" style="font-size:20px;">Transportadoras</a>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cadastrar" style="width:100px;">Cadastrar</button>
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar" style="width:100px;">Editar</button>
-                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#apagar" style="width:100px;">Apagar</button>
+                        <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#apagar" style="width:100px;">Apagar</button> -->
                         <br><br>
                     </div>
                 </div>
@@ -52,6 +53,7 @@
                         <th>Avaliacao</th>
                         <th>Zona de Atendimento</th>
                         <th>Ativo?</th>
+						<th>Apagar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,6 +68,7 @@
                     '<td>' . $row['avaliacao'] . '</td>' .
                     '<td>' . $row['zona_atendimento'] . '</td>' .
                     '<td>' . $row['habilitado'] . '</td>' .
+                    '<td><button id="'. $row['id'].'" class="delbutton">X</td>' .
                     '</tr>';
                     }
                     echo $html;
@@ -73,6 +76,40 @@
                 </tbody>
             </table>
         </div>
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$('#cadastrar').click(function(e) {
+					 //alert('clicked');
+				 });
+				 
+			});
+			
+		</script>
+		
+		<script type="text/javascript" >
+        $(function() {
 
+            $(".delbutton").click(function() {
+                var del_id = $(this).attr("id");
+                var info = 'id=' + del_id;
+                if (confirm("Tem certeza que deseja deletar?")) {
+                    $.ajax({
+                        type : "POST",
+                        url : "delete_entry.php", //URL to the delete php script
+                        data : info,
+                        success : function() {
+                        }
+                    });
+                    $(this).parents(".record").animate("fast").animate({
+                        opacity : "hide"
+                    }, "slow");
+                }
+                return false;
+            });
+        });
+ </script>
+		
+		
     </body>
 </html>
