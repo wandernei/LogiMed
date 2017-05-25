@@ -1,0 +1,13 @@
+
+
+.modal-header, h4, .close {
+    background-color: #595959;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.modal-footer {
+    background-color: black;
+}
