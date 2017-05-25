@@ -1,8 +1,8 @@
-<div style="text-align: left;">
+<!--<div style="text-align: left;">
     <img src=Resorces/Logo.jpg alt=Logo style=width:10%;height:10%;>
 
-</div>
-<nav class="navbar navbar-inverse">
+</div>-->
+<nav class="navbar navbar-inverse navbar-fixed-top" >
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">LogiMed</a>

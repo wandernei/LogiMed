@@ -33,7 +33,7 @@
 
                                 <div class="form-group">
                                     <label for="nome">Transportadora:</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome">
+                                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome" autofocus>
                                 </div>
 
                                 <div class="form-group">
