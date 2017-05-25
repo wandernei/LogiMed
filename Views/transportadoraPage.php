@@ -12,14 +12,14 @@
         <?php include 'header.php'; ?>
 
 
-           <?php include './Transportadora/transportadoras.php'; ?>
+        <?php include './Transportadora/transportadoras.php'; ?>
+
+        
+        
+        
+        
 
 
-
-
-
-
-
-            <?php include 'footer.php'; ?>
+        <?php include 'footer.php'; ?>
     </body>
 </html>
